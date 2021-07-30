@@ -7,12 +7,13 @@ This project is a web application that takes a customer to order different sizes
 
 ## Behaviour Driven Development (BDD)
  input ouput select pizza size, choose the kind of crust and toppings. Place your order as much as you can to be delivered and check the cost.
- 
+
 ## Setup/installation Requirements:
 * Fork/Clone the repository
   ```
-  git glone https://github.com/edwinkipchumba/Pizza-Hub
+  $git glone https://github.com/edwinkipchumba/Pizza-Hub
   ```
+*  cd pizza hub
 * Open project using code editor of your choice
 * Open project on live server.
 
