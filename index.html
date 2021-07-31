@@ -14,14 +14,14 @@
      <script src="js/jquery-3.6.0.slim.js"></script>
      <script src="js/script.js"></script>
 </head>
-<body>
+<body class="view" style="background-image: url(assets/img/bg.jpeg);background-repeat: no-repeat; background-size: cover;background-position: center;">
    <nav class="navbar navbar-default justify-content-center bg-success">
        <div class="container-fluid">
            <div class="navbar-header">
-             <a class="navbar-brand" href="#">Pizza Hub</a>
+             <a class="active" href="#"><strong> Pizza Hub</strong></a>
            </div>
            <ul class="nav navbar-nav justify-content-center">
-               <li class="active" ><a href="#">About us</a></li>
+               <li><a href="#"><a href="#">About Us</a></a></li>
                <li><a href="#"><a href="#">Our services</a></a></li>
                <li><a href="#"><a href="#">Contact Us</a></a></li>
            </ul>
@@ -58,6 +58,7 @@
                 </div>
             </div>
         </div>
+        <div id="Our services">
         <div id="container carousel slide carousel-multi-item" id="variety" data-ride="carousel">
             <div class="controls-top">
               <h2>Our varieties</h2>
@@ -116,7 +117,7 @@
             </div>
         </div>
         <!-- form -->
-         <div class="container -fluid" id="make-order">
+         <div class="container-fluid bg-success" id="make-order">
              <div class="order-overlay">
                  <div class="controls-top text-center" id="Order-now">
                      <h2 class="order">Order Here</h2>
@@ -170,12 +171,39 @@
                              <p>Feel free to reach us in case of any complains</p>
                              <p id="regards">Regards by Management</p>
                          </div>
+                         <div class="choice">
+                             <h2>Your order is:</h2>
+                             <div id="your orders">
+                                 <table class="table table-sm pizzatable">
+                                     <th>
+                                         <tr>
+                                             <th scope="col">Name</th>
+                                             <th scope="col">Size</th>
+                                             <th scope="col">Crust</th>
+                                             <th scope="col">Topping</th>
+                                             <th scope="col">Total</th>
+                                         </tr>
+                                     </th>
+                                     <tbody id="ordersmade">
+                                         <tr>
+                                             <td id="Pizzaname"></td>
+                                             <td id="pizzasize"></td>
+                                             <td id="pizzacrust"></td>
+                                             <td id="pizzatopping"></td>
+                                             <td id="totals"></td>
+                                         </tr>
+                                     </tbody>
+                                 </table>
+                                 
+                             </div>
+                         </div>
                      </div>
                  </div>
              </div>
-         </div>
+          </div>
+        </div>
         <!-- contact part section -->
-       <div class="container-fluid bg-primary">
+       <div class="container-fluid bg-primary g-4">
            <div class="controls-top text-center">
                <h2 class="contact">Contact Us</h2>
            </div>
