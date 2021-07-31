@@ -8,22 +8,22 @@
      <!-- <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css" type="text/css"> -->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-     <link rel="stylesheet" href="https://www.fontawesome.com/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" href="/css/uikit-3.6.22/css/uikit.css" type="text/css">
      <link rel="stylesheet" href="/css/styles.css" type="text/css">
      <script src="js/jquery-3.6.0.slim.js"></script>
      <script src="js/script.js"></script>
 </head>
-<body class="view" style="background-image: url(assets/img/bg.jpeg);background-repeat: no-repeat; background-size: cover;background-position: center;">
+<body>
    <nav class="navbar navbar-default justify-content-center bg-success">
        <div class="container-fluid">
            <div class="navbar-header">
              <a class="active" href="#"><strong> Pizza Hub</strong></a>
            </div>
-           <ul class="nav navbar-nav justify-content-center">
-               <li><a href="#"><a href="#">About Us</a></a></li>
-               <li><a href="#"><a href="#">Our services</a></a></li>
-               <li><a href="#"><a href="#">Contact Us</a></a></li>
+           <ul class="nav">
+               <li><a href="#About">About Us</a></li>
+               <li><a href="#Our-service">Our services</a></li>
+               <li><a href="#Contact-Us">Contact Us</a></li>
            </ul>
        </div>
     </nav> 
@@ -31,8 +31,8 @@
         <div class="container" id="header">
             <div class="row">
                 <div class="col-sm-12 mb-4 white text-center text">
-                    <h1 class="h1-responsive gold-text-uppercase font-weigth-bold mb-0 pt-5 pulse"><strong>PIZZA HUB</strong></h1>
-                    <h4 class="text-upper mb-4 gold-text floater"><strong>YOUR DOOR STEP CUSTOMER</strong></h4>
+                    <h1 class="h1-responsive gold-text-uppercase font-weigth-bold mb-0 pt-5 pulse"><span style="color: cyan; font-weight: 800;">WELCOME</span> </h1>
+                    <h4 class="text-upper mb-4 gold-text floater"><strong> <marquee width="60%" direction="right" height="100px">YOUR DOOR STEP CUSTOMER</marquee></strong></h4>
                     <a class="btn btn-orange button floater" href="#make-order">Order Now</a>
                 </div>
             </div>
@@ -58,14 +58,14 @@
                 </div>
             </div>
         </div>
-        <div id="Our services">
-        <div id="container carousel slide carousel-multi-item" id="variety" data-ride="carousel">
+        <div id="">
+          <div id="container carousel slide carousel-multi-item" id="variety" data-ride="carousel">
             <div class="controls-top">
               <h2>Our varieties</h2>
             </div>
             <div class="carousel-inner" role="listbox">
                <div class="carousel-item active">
-                   <div class="col-md-4">
+                   <div class="col-md-2">
                        <div class="card mb-2">
                            <img src="assets/img/Hawaiian pizza1.jpg" alt="Hawaiian pizza">
                            <div class="card-body">
@@ -73,7 +73,7 @@
                            </div>
                        </div>
                    </div>
-                   <div class="col-md-4">
+                   <div class="col-md-2">
                        <div class="card mb-2">
                            <img src="assets/img/Margherita Pizza2.jpg" alt="Margherita pizza">
                            <div class="card-body">
@@ -81,7 +81,7 @@
                            </div>
                        </div>
                    </div>
-                   <div class="col-md-4">
+                   <div class="col-md-2">
                        <div class="card mb-2">
                            <img src="assets/img/Meat Pizza3.jpg" alt="Meat-Pizza">
                            <div class="card-body">
@@ -89,7 +89,7 @@
                            </div>
                        </div>
                    </div>
-                   <div class="col-md-4">
+                   <div class="col-md-2">
                        <div class="card mb-2">
                            <img src="assets/img/Pepperoni Pizza4.jpg" alt="Pepperoni Pizza">
                            <div class="card-body">
@@ -97,7 +97,7 @@
                            </div>
                        </div>
                    </div>
-                   <div class="col-md-4">
+                   <div class="col-md-2">
                        <div class="card mb-2">
                            <img src="assets/img/the works pizza5.jpg" alt="Works-Pizza">
                            <div class="card-body">
@@ -105,7 +105,7 @@
                            </div>
                        </div>
                    </div>
-                   <div class="col-md-4">
+                   <div class="col-md-2">
                        <div class="card mb-2">
                            <img src="assets/img/Veggie Pizza6.jpg" alt="Veggie">
                            <div class="card-body">
@@ -127,7 +127,7 @@
                      <div class="col-sm-5">
                          <form action="">
                              <label for="select">Select your Flavor</label><br>
-                               <select class="browser-default custom-select custom-select-md mb-4" id="flavor">
+                               <select class="browser-default custom-select custom-select-md mb-8 name">
                                    <option value="Hawaiian pizza">Hawaiian Pizza</option>
                                    <option value="Margherita Piza">Margherita Piza</option>
                                    <option value="Meat pizza">Meat Pizza</option>
@@ -161,7 +161,7 @@
                                    <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon" name="Toppings">
                                    <label for="mushrooms" class="custom-control-input">Mushroom</label>
                                </div>
-                               <button type="submit" class="btn btn-orange">Make your order</button>
+                               <button type="submit" class="btn btn-success" id="order">Order</button>
                          </form>
                      </div>
                      <div class="col-sm-7">
