@@ -16,6 +16,8 @@ $(document).ready(function(){
       let pizzaName=$(".name option:selected").val();
       let pizzaSize=$("#size option:selected").val();
       let PizzaCrust=$("#crust optio:selected").val();
+      let pizzaTopping=[];
+      
   })  
 })
  
