@@ -12,45 +12,42 @@ function getPizza(name, size, crust, topping, total) {
 
 // user interface logic
 function order(){
-  var type=document.getElementById("ordersmade").value;
+  var item=document.getElementById("ordersmade").value;
     if(myForm.type.value==""){
-      alert("please select your flovor");
+      alert("please select your flavor");
       return false;
     }
-    else if(myForm.size.value=="")
+    else if(myForm.size.value==""){
+      alert("please select your pizza size");
+       return false;
+    }
+    else if(myForm.crust.value==""){
+      alert("please select your crust");
+      return false;
+    }
+    else if(myForm.topping.value==""){
+      alert("please select your topping")
+    }
+    else if(item<=0){
+      alert("item should be selected")
+       return false;
+    }
 }
 
-// $(document).ready(function () {
-//   $("button#order").click(function (event) {
-//     event.preventDefault();
-//     let pizzaName = $(".name option:selected").val();
-//     let pizzaSize = $("#size option:selected").val();
-//     let PizzaCrust = $("#crust optio:selected").val();
-//     let pizzaTopping = [];
+var name=document.getElementById("name").value;
+var phone=document.getElementById("phone").value;
+var location=document.getElementById("location").value;
 
-//     function.(element => {
-
-//     });
-
-//   });
-//   let toppingValue = pizzaTopping.length * 60;
-//   console.log("toppings value" + toppingsValue);
-
-  
-//     if (pizzaSize == 0 && PizzaCrust == 0) {
-//       console.log("nothing selected");
-//       $("button#order").show();
-//       $("button#information").show();
-//       $("button.choice").hide();
-//       alert("please select pizza size and crust")
-//     } else {
-//       $("button#order").hide();
-//       $("button#information").hide();
-//       $("button.choice").slideDown(800);
-//     }
-    
-//     total=price+crustPrice+toppingValue;
-//     console.log(total);
-//     let checkoutTotal=checkoutTotal+total;
-//   })
-  
+if(phone==="" || phone.length>10){
+  alert("please enter a valid phone number")
+  return false;
+}
+else if(name===""){
+  alert("provide a valid name")
+  return false;
+}
+else if(locatio===""){
+  alert("please provide your lacation");
+  return false;
+}
+else alert("your order will be delivered")
