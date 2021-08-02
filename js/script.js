@@ -111,17 +111,16 @@ $(document).ready(function(event){
     var pizzaOrder=new GetPizza(item,item2,item3,item4);
     var newPizzaPrice=(pizzaOrder.pizzaSize()+pizzaOrder.pizzaCrust()+pizzaOrder.pizzaTopping())*number;
    
-    $("pizzaname").text($("#flavor option:selected").text())
-    $("pizzasize").text($("#size option:selected").text())
-    $("pizzacrust").text($("#crust option:selected").text())
-    $("pizzatopping").text($("#topping option:selected").text())
-    $("pizzanumber").text($("#num").text())
+    $("#pizzaname").text($("#flavor option:selected").text())
+    $("#pizzasize").text($("#size option:selected").text())
+    $("#pizzacrust").text($("#crust option:selected").text())
+    $("#pizzatopping").text($("#topping option:selected").text())
+    $("#pizzanumber").text($("#num").text())
 
     $("#totals").text(newPizzaPrice).val();
 
   })
-
-    
+  
 })
 
 function validateOrder(){
