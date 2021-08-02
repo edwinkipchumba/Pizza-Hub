@@ -17,7 +17,7 @@
 <body>
     <nav class="navbar navbar-default justify-content-center bg-success">
         <div class="container-fluid">
-            <div class="navbar-header">
+            <div class="navbar-header 2.5rem=40px">
                 <a class="active" href="#"><strong> Pizza Hub</strong></a>
             </div>
             <ul class="nav">
@@ -32,7 +32,7 @@
             <div class="row">
                 <div class="col-sm-12 mb-4 white text-center text">
                     <h1 class="h1-responsive gold-text-uppercase font-weigth-bold mb-0 pt-5 pulse"><span
-                            style="color: cyan; font-weight: 800;">WELCOME TO:</span> </h1>
+                            style="color: cyan; font-weight: 750;">WELCOME TO:</span> </h1>
                     <h4 class="text-upper mb-4 gold-text floater"><strong>
                             <marquee width="60%" direction="right" height="100px">YOUR DOOR STEP CUSTOMER</marquee>
                         </strong></h4>
@@ -42,19 +42,19 @@
         </div>
     </div>
     <div id="About-Us">
-        <div class="controls-top text-center" id="about us">
+        <div class="controls-top text-center " id="about us">
             <h2>ABOUT US</h2>
         </div>
-        <div class="container-fluid" id="about_us">
+        <div class="container-fluid ">
             <div class="col-sm-12 d-flex flex-xs-column">
                 <div class="col-sm-7 img text-center about-img">
                     <div class="about-img">
-                        <img src="assets/img/about us.gif" alt="about us">
+                        <img src="assets/img/about us.gif" alt="gif-pizza">
                     </div>
                 </div>
                 <div class="col-sm-5 align-items-center bg-info">
                     <div class="content">
-                        <h3>Who Are We?</h3>
+                        <h3 class="info">Centered Hub</h3>
                         <p>Pizza hub is a business center that had been in operation for more than ten as for now
                             .<br>We
                             are available 24/7 delivering services to our customers as per their orders.<br>We are also
@@ -132,9 +132,9 @@
                 <h2>Make your order</h2>
                 <div class="row">
                     <div class="col-sm-6">
-                        <form action="" name="myform">
+                        <form action="" id="myform">
                             <label for="select">Select your Flavor</label><br>
-                            <select class="browser-default form-select-lg mb-4 name">
+                            <select class="browser-default form-select-lg mb-4" id="flavor">
                                 <option value="">select your flavor</option>
                                 <option value="Hawaiian pizza">Hawaiian Pizza</option>
                                 <option value="Margherita Piza">Margherita Piza</option>
@@ -163,25 +163,20 @@
                             </select><br>
 
                             <!-- toppings selection -->
-                            <label for="toppings">Select your Toppings at KSH.60 each</label><br>
-                            <div class="custom-control custom-checkbox custom-control-inline">
-                                <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon"
-                                    name="Toppings">
-                                <label for="sausage" class="custom-control-label">Sausage</label>
-                            </div>
-                            
-                            <div class="custom-control custom-checkbox custom-control-inline">
-                                <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon"
-                                    name="Toppings">
-                                <label for="mushroom" class="custom-control-input">Mushroom</label>
-                            </div>
+                            <label for="toppings">select your topping</label><br>
+                            <select class="browser-default form-select-lg mb-4" id="toppnig">
+                                <option value="">Select your toppings</option>
+                                <option value="Bacon">Bacon--ksh.60</option>
+                                <option value="Sausage">Sausage--ksh.60</option>
+                                <option value="mushroom">Mushroom--ksh.60</option>
+                            </select><br><br>
 
-                            <div class="custom-control custom-checkbox custom-control-inline">
-                                <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon"
-                                    name="Toppings">
-                                <label for="bacon" class="custom-control-input">Bacon</label>
-                            </div>
-                            <button type="submit" class="btn btn-success" onclick="order()" >Order</button>
+                             <label for="number"></label>
+                                <option value="">Number of pizza</option>
+                            <input type="number" id="num"><br><br>
+
+
+                            <button type="submit" class="btn btn-success" id="order" >Order</button>
                         </form>
                     </div>
 
