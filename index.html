@@ -132,7 +132,7 @@
                 <h2>Make your order</h2>
                 <div class="row">
                     <div class="col-sm-6">
-                        <form action="" id="myform">
+                        <form action="" id="myForm" onsubmit="validateOrder()">
                             <label for="select">Select your Flavor</label><br>
                             <select class="browser-default form-select-lg mb-4" id="flavor">
                                 <option value="">select your flavor</option>
@@ -164,18 +164,18 @@
 
                             <!-- toppings selection -->
                             <label for="toppings">select your topping</label><br>
-                            <select class="browser-default form-select-lg mb-4" id="toppnig">
+                            <select class="browser-default form-select-lg mb-4" id="topping">
                                 <option value="">Select your toppings</option>
                                 <option value="0">Bacon--ksh.60</option>
-                                <option value="1">Sausage--ksh.60</option>
-                                <option value="2">Mushroom--ksh.60</option>
+                                <option value="1">Sausage--ksh.90</option>
+                                <option value="2">Mushroom--ksh.80</option>
                             </select><br><br>
 
                              <label for="number"></label>
                                 <option value="">Number of pizza</option>
                             <input type="number" id="num"><br><br>
 
-                            <button type="submit" class="btn btn-success" id="order" >Order</button>
+                            <button type="submit" class="btn btn-success" id="order">Order</button>
                         </form>
                     </div>
 
@@ -219,7 +219,7 @@
                             <button class="btn btn-orange delivery">Home</button>
                         </div>
                         <div class="delivery">
-                            <form action="">
+                            <form onsubmit="validateForm()">
                                 <input type="text" id="name" class="form-control mb-3" placeholder="Name...">
                                 <input type="number" id="phone" class="form-control mb-3" placeholder="Phone number...">
                                 <input type="text" id="location" class="form-control mb-3"
