@@ -30,11 +30,11 @@ To fix a bug or enhance an existing module, follow these steps:
 If you find a bug, kindly feel free to comment an issue here and inlcude their corresponding results.
 
 ## Technologies used
-1. HTML : Used to create page Layout.
-2. CSS : Styling the webpages.
-3. Bootstrap : For responsive websites.
-4. Javascript: for interactive webpages.
-5. jQuery - used with javascript for interactive webpage
+1. HTML5
+2. CSS
+3. Bootstrap
+4. Javascript
+5. JQuery 
 
 ## Support and contact details
  Feel free to contact me incase of any issue or questions, ideas and concern towards the same.
