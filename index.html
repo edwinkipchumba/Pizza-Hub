@@ -132,7 +132,7 @@
                 <h2>Make your order</h2>
                 <div class="row">
                     <div class="col-sm-6">
-                        <form action="">
+                        <form action="" name="myform">
                             <label for="select">Select your Flavor</label><br>
                             <select class="browser-default form-select-lg mb-4 name">
                                 <option value="">select your flavor</option>
@@ -143,6 +143,7 @@
                                 <option value="Works Pizza">Works Pizza</option>
                                 <option value="Veggie Pizza">Veggie Pizza</option>
                             </select><br>
+
                                   <!-- pizza option size -->
                             <label for="select-size">Select your Size</label><br>
                             <select class="browser-default form-select-lg mb-4 " id="size">
@@ -151,6 +152,7 @@
                                 <option value="medium">Medium--ksh.850</option>
                                 <option value="small">Small--ksh.650</option>
                             </select><br>
+
                                  <!-- select crust -->
                             <label for="crust">Choose your favorite Crust</label><br>
                             <select class="browser-default form-select-lg mb-4" id="crust">
@@ -159,6 +161,7 @@
                                 <option value="stuffed">Stuffed--ksh.170</option>
                                 <option value="Gluten-free">Gluten-free--ksh.150</option>
                             </select><br>
+
                             <!-- toppings selection -->
                             <label for="toppings">Select your Toppings at KSH.60 each</label><br>
                             <div class="custom-control custom-checkbox custom-control-inline">
@@ -166,17 +169,19 @@
                                     name="Toppings">
                                 <label for="sausage" class="custom-control-label">Sausage</label>
                             </div>
+                            
                             <div class="custom-control custom-checkbox custom-control-inline">
                                 <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon"
                                     name="Toppings">
                                 <label for="Bacon" class="custom-control-input">Bacon</label>
                             </div>
+
                             <div class="custom-control custom-checkbox custom-control-inline">
                                 <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon"
                                     name="Toppings">
                                 <label for="mushrooms" class="custom-control-input">Mushroom</label>
                             </div>
-                            <button type="submit" class="btn btn-success" id="order" >Order</button>
+                            <button type="submit" class="btn btn-success" onclick="order()" >Order</button>
                         </form>
                     </div>
 
@@ -190,7 +195,7 @@
                         <div class="choice">
                             <h2>Your order is:</h2>
                             <div id="your orders">
-                                <table class="table table-sm pizzatable">
+                                <table class="table table-sm">
                                     <th>
                                         <tr>
                                             <th scope="col">Name</th>
