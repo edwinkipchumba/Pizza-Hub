@@ -1,15 +1,14 @@
 // // business logic
-var price, crustPrice, toppingPrice
-let cost = 0;
 
-function GetPizza(type, size, crust, topping, total) {
+
+function GetPizza(type, size, crust, topping) {
   this.type = type;
   this.size = size;
   this.crust = crust;
   this.topping = topping;
-  this.total = total;
+  
 };
-GetPizza.prototype.sizePizza==function(){
+GetPizza.prototype.pizzaSize=function(){
   if(this.type==0){
     if(this.size==0){
       return 1250;
@@ -78,7 +77,7 @@ else if(this.type==5){
 }
 };
  
-GetPizza.prototype.crustPizza=function(){
+GetPizza.prototype.pizzaCrust=function(){
   if(this.crust==0){
     return 220
   }
@@ -89,7 +88,7 @@ GetPizza.prototype.crustPizza=function(){
     return 150
   }
 }
-GetPizza.prototype.toppingPizza=function(){
+GetPizza.prototype.pizzaTopping=function(){
   if(this.topping==0){
     return 60
   }
@@ -101,7 +100,6 @@ GetPizza.prototype.toppingPizza=function(){
   }
 }
 
-
 // user interface logic
 $(document).ready(function(event){
   $("form").submit(function(){
@@ -111,12 +109,19 @@ $(document).ready(function(event){
     var item4=parseInt($("#topping option:selected").val());
     var number=parseInt($("#num").val());
     var pizzaOrder=new GetPizza(item,item2,item3,item4);
-    var newPizzaPrice=(pizzaOrder.sizePizza()+pizzaOrder.crustPizza()+pizzaOrder.toppingPizza())*number;
-    alert(newPizzaPrice)
+    var newPizzaPrice=(pizzaOrder.pizzaSize()+pizzaOrder.pizzaCrust()+pizzaOrder.pizzaTopping())*number;
+   
+    $("pizzaname").text($("#flavor option:selected").text())
+    $("pizzasize").text($("#size option:selected").text())
+    $("pizzacrust").text($("#crust option:selected").text())
+    $("pizzatopping").text($("#topping option:selected").text())
+    $("pizzanumber").text($("#num").text())
+
+    $("#totals").text(newPizzaPrice).val();
 
   })
-    
 
+    
 })
 
 function validateOrder(){
@@ -143,7 +148,6 @@ function validateOrder(){
 }
 
 function validateForm(){
-
 var pName=document.getElementById("name").value;
 var phone=document.getElementById("phone").value;
 var location=document.getElementById("location").value;
@@ -156,11 +160,11 @@ else if(pName===""){
   alert("provide a valid name")
   return false;
 }
-else if(locatio===""){
+else if(location===""){
   alert("please provide your lacation");
   return false;
 }
 else {
-  alert("your order will be delivered")
+  alert("your order will be delivered at a cost of ksh.200")
 }
 }
